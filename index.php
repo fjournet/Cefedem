@@ -14,6 +14,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
   <head>
+    <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta charset="utf-8">
     <title>Cefedem</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +22,8 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/bootstrap/css/bootstrap.css">
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -32,8 +34,11 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
     </style>
-    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/bootstrap/css/bootstrap-responsive.css">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
