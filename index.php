@@ -62,7 +62,7 @@
             <li><a href="#">La VAE</a></li>
           </ul>
         </li>
-          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Formation travailleur <b class="caret"></b> </a>
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Formation professionnelle <b class="caret"></b> </a>
             <ul class="dropdown-menu">
               <li><a href="#">Catalogue de stage</a></li>
               <li><a href="#">Modalités d'inscirption</a></li>
@@ -78,6 +78,32 @@
       </div>
     </div>
   </nav>
+  <div class="row">
+    <div class="span12">
+      <div id="bannerOuter" class="width">
+        <div id="bannerWrapper">
+          <div id="bannerBorder"> 
+            <div id="banner" role="banner" class="preContent">
+              <div id="extraContainer4"></div>
+              <div class="ss3">
+                <div class="pageHeader"></div>
+              </div><!--/ss3-->
+              <div class="clear"></div>
+              <section id="bannerContentBox">
+                <div id="bannerBoxBackground"></div>
+                <div id="extraContainer5"></div>
+              </section><!--/bannerContentBox-->
+                <div id="logoTopLeft"><a href="http://www.themeflood.com/preview/flood/"></a></div>
+                <div id="logoTopRight"><a href="http://www.themeflood.com/preview/flood/"></a></div>
+                <div id="logoBottomLeft"><a href="http://www.themeflood.com/preview/flood/"></a></div>
+                <div id="logoBottomRight"><a href="http://www.themeflood.com/preview/flood/"></a></div>
+              </div><!--/banner-->
+            </div><!--/bannerBorder-->
+          </div><!--/bannerWrapper-->
+        </div><!--/bannerOuter-->
+      </div>
+    </div>
+  </div>
 <div class="container"> <br/>
   <div class="row">
     <div class="span9">
