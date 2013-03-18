@@ -44,8 +44,8 @@
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
-    <script src="js/jquery.js"></script> 
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.js"></script> 
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
@@ -110,10 +110,6 @@
                 <div id="bannerBoxBackground"></div>
                 <div id="extraContainer5"></div>
               </section><!--/bannerContentBox-->
-                <div id="logoTopLeft"><a href="http://www.themeflood.com/preview/flood/"></a></div>
-                <div id="logoTopRight"><a href="http://www.themeflood.com/preview/flood/"></a></div>
-                <div id="logoBottomLeft"><a href="http://www.themeflood.com/preview/flood/"></a></div>
-                <div id="logoBottomRight"><a href="http://www.themeflood.com/preview/flood/"></a></div>
               </div><!--/banner-->
             </div><!--/bannerBorder-->
           </div><!--/bannerWrapper-->
