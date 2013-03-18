@@ -122,17 +122,17 @@
     <div class="span9">
       <div id="myCarousel" class="carousel">
         <div class="carousel-inner thumbnail">
-        <div class="item active"> <img alt="" src="image/DSC_0042.JPG"/>
+        <div class="item active"> <img alt="" src="/image/DSC_0042.JPG"/>
           <div class="carousel-caption">
             <p>Une présentation</p>
           </div>
         </div>
-        <div class="item"> <img alt="" src="image/DSC_0044.JPG"/>
+        <div class="item"> <img alt="" src="/image/DSC_0044.JPG"/>
           <div class="carousel-caption">
             <p>Un autre présentation</p>
           </div>
         </div>
-        <div class="item"> <img alt="" src="image/DSC_0047.JPG"/>
+        <div class="item"> <img alt="" src="/image/DSC_0047.JPG"/>
           <div class="carousel-caption">
             <p>Et encore une autre !</p>
          </div>
