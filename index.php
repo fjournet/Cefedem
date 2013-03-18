@@ -39,21 +39,19 @@
     </style>
 
     
-
-
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
-    <script src="/js/jquery.js"></script> 
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script> 
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
   </head>
 
   <body>
@@ -74,7 +72,7 @@
           <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Formation travailleur <b class="caret"></b> </a>
           <ul class="dropdown-menu">
             <li><a href="#">Contenue de le formation</a></li>
-            <li><a href="#">COnditions d'accès</a></li>
+            <li><a href="#">Conditions d'accès</a></li>
             <li><a href="#">Equipe pédagogique</a></li>
             <li class="divider"></li>
             <li><a href="#">La VAE</a></li>
