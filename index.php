@@ -148,9 +148,7 @@
    <div class="page-header">
     <div class="row">
       <div class="span12">
-        <h1>Le centre de formation des Enseignants de la musique</h1>
-        <p>Le Centre de Formation des Enseignants de la Musique Rhône-Alpes a été créé en 1990 à l'initiative du Ministère de la Culture. C’est l’un des deux premiers centres à ouvrir ses portes dans le cadre d’une politique à long terme de l’Etat visant à promouvoir des études supérieures centrées sur la formation des professeurs de l’enseignement spécialisé.<br> 
-          Dans son action, le CEFEDEM s’attache particulièrement à mener une réflexion sur les défis complexes auxquels l’enseignement spécialisé de la musique est confronté aujourd’hui et essaie de proposer des solutions pour y répondre (pratiques collectives, culture musicale, didactique de la musique…). Une part importante de son action porte sur les pratiques des amateurs et sur la diversité des genres musicaux dans l’enseignement.</p>
+        
       </div>
     </div>
   <div class="row">
