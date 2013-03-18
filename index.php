@@ -23,9 +23,9 @@
 
     <!-- Le styles -->
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>" />
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/bootstrap/css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/bootstrap/css/bootstrap-responsive.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('stylesheet_url'); ?>"  />
     <!--<link href="style.css" rel="stylesheet" type="text/css">-->
     <style>
       body {
@@ -37,14 +37,12 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
     </style>
-
-    
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
-    <script src="js/jquery.js"></script> 
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="wp-content/themes/Cefedem/js/jquery.js"></script> 
+    <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
@@ -115,23 +113,22 @@
         </div><!--/bannerOuter-->
       </div>
     </div>
-  </div>
 <div class="container"> <br/>
   <div class="row">
     <div class="span9">
       <div id="myCarousel" class="carousel">
         <div class="carousel-inner thumbnail">
-        <div class="item active"> <img alt="" src="/image/DSC_0042.JPG"/>
+        <div class="item active"> <img alt="" src="wp-content/themes/Cefedem/image/DSC_0042.JPG"/>
           <div class="carousel-caption">
             <p>Une présentation</p>
           </div>
         </div>
-        <div class="item"> <img alt="" src="/image/DSC_0044.JPG"/>
+        <div class="item"> <img alt="" src="wp-content/themes/Cefedem/image/DSC_0044.JPG"/>
           <div class="carousel-caption">
             <p>Un autre présentation</p>
           </div>
         </div>
-        <div class="item"> <img alt="" src="/image/DSC_0047.JPG"/>
+        <div class="item"> <img alt="" src="wp-content/themes/Cefedem/image/DSC_0047.JPG"/>
           <div class="carousel-caption">
             <p>Et encore une autre !</p>
          </div>
@@ -272,18 +269,18 @@ $(function (){
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="bootstrap/js/bootstrap-transition.js"></script>
-    <script src="bootstrap/js/bootstrap-alert.js"></script>
-    <script src="bootstrap/js/bootstrap-modal.js"></script>
-    <script src="bootstrap/js/bootstrap-dropdown.js"></script>
-    <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
-    <script src="bootstrap/js/bootstrap-tab.js"></script>
-    <script src="bootstrap/js/bootstrap-tooltip.js"></script>
-    <script src="bootstrap/js/bootstrap-popover.js"></script>
-    <script src="bootstrap/js/bootstrap-button.js"></script>
-    <script src="bootstrap/js/bootstrap-collapse.js"></script>
-    <script src="bootstrap/js/bootstrap-carousel.js"></script>
-    <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap-button.js"></script>
+    <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap-typeahead.js"></script>
 
   </body>
 </html>
