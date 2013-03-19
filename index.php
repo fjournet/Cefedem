@@ -35,7 +35,7 @@
     border-radius: 5px 5px 5px 5px;
     border: 5px solid white;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-}
+	}
     </style>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -118,17 +118,17 @@
     <div class="span9">
       <div id="myCarousel" class="carousel">
         <div class="carousel-inner thumbnail">
-        <div class="item active"> <img alt="" src="wp-content/themes/Cefedem/image/DSC_0042.JPG"/>
+        <div class="item active"> <img alt="" src="wp-content/themes/Cefedem/image/312.JPG"/>
           <div class="carousel-caption">
             <p>Une présentation</p>
           </div>
         </div>
-        <div class="item"> <img alt="" src="wp-content/themes/Cefedem/image/DSC_0044.JPG"/>
+        <div class="item"> <img alt="" src="wp-content/themes/Cefedem/image/bulletin13couv2.JPG"/>
           <div class="carousel-caption">
             <p>Un autre présentation</p>
           </div>
         </div>
-        <div class="item"> <img alt="" src="wp-content/themes/Cefedem/image/DSC_0047.JPG"/>
+        <div class="item"> <img alt="" src="wp-content/themes/Cefedem/image/elm11.JPG"/>
           <div class="carousel-caption">
             <p>Et encore une autre !</p>
          </div>
@@ -151,6 +151,7 @@
   <div class="row">
     <div class="span12">...</div>
   </div>
+
   <div class="row">
     <div class="span2">...</div>
     <div class="span2">...</div>
@@ -172,13 +173,6 @@
 <ul>
    <li>Tigre de Sibérie</li>
    <li>Tigre de Chine méridionale</li>
-   <li>Tigre de Bali</li>
-   <li>Tigre de d'Indochine</li>
-   <li>Tigre de Malaisie</li>
-   <li>Tigre de Java</li>
-   <li>Tigre de Sumatra</li>
-   <li>Tigre du Bengale</li>
-   <li>Tigre de la Caspienne</li>
 </ul>
 </div>
     <div class="span8">...</div>
@@ -223,33 +217,47 @@ et fragmentation des habitats du fait du développement non durable d’infrastr
           </tr>
     </tbody>
 </table></div>
-    <div class="span3">
-   <form>
-  <fieldset>
-    <legend>Si vous voulez me laisser un message</legend>
-    <h4>Comment m'avez-vous trouvé ?</h4>
-    <br/>
-    <label for="ami" class="radio">
-      <input type="radio" name="origine" value="ami" id="ami" />
-      Par un ami </label>
-    <label for="web" class="radio">
-      <input type="radio" name="origine" value="web" id="web" />
-      Sur le web </label>
-    <label for="hasard" class="radio">
-      <input type="radio" name="origine" value="hasard" id="hasard" />
-      Par hasard </label>
-    <label for="autre" class="radio">
-      <input type="radio" name="origine" value="autre" id="autre" />
-      Autre... </label>
-    <label for="textarea">Votre message :</label>
-    <textarea id="textarea" rows="3"></textarea>
-    <p>Vous pouvez aggrandir la fenêtre</p>
-    <button type="submit">Envoyer</button>
-  </fieldset>
-</form>
-</div>
   </div>
 </div>
+<div id="content">
+	<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
+	<div class="post" id="post-<?php the_ID(); ?>">
+	<h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+	<div class="post_content">
+	<?php the_content(); ?>
+	</div>
+	</div>
+	<p class="postmetadata">
+		<?php the_time('j F Y') ?> par <?php the_author() ?> | 
+		Cat&eacute;gorie: <?php the_category(', ') ?> | 
+		<?php comments_popup_link('Pas de commentaires', '1 Commentaire', '% Commentaires'); ?> 
+		<?php edit_post_link('Editer', ' &#124; ', ''); ?>
+	</p>
+	<div class="comments-template">
+	<?php comments_template(); ?>
+	</div>
+	<?php endwhile; ?>
+	<div class="navigation">
+	<?php posts_nav_link(' - ','page suivante','page pr&eacute;c&eacute;dente'); ?>
+	</div>
+	<?php else : ?>
+	<h2>Oooopppsss...</h2>
+	<p>Désolé, mais vous cherchez quelque chose qui ne se trouve pas ici .</p>
+	<?php include (TEMPLATEPATH . "/searchform.php"); ?>
+
+	<?php endif; ?>
+</div> 
+<div id="footer">
+	<p>
+	Copyright &#169; <?php print(date(Y)); ?> <?php bloginfo('name'); ?>
+	<br />
+	Blog propulsé par <a href="http://wordpress.org/">WordPress</a> et con&ccedil;u par <a href="http://www.fran6art.com">Fran6art</a>
+	<br />
+	<a href="feed:<?php bloginfo('rss2_url'); ?>">Articles (RSS)</a> et <a href="feed:<?php bloginfo('comments_rss2_url'); ?>">Commentaires (RSS)</a>.
+	<?php echo get_num_queries(); ?> requêtes. <?php timer_stop(1); ?> secondes.
+	</p>
+</div>
+
 <script>
 
 $(function (){
