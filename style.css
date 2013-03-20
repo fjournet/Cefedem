@@ -58,7 +58,7 @@ body {
 #bannerWrapper, 
 #banner,
 .pageHeader {
-  height : 400px;
+  height : 100px;
 }
 #bannerOuter {
   display: block;
