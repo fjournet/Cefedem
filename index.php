@@ -22,10 +22,14 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
+	
+	<link type="text/css" href="wp-content/themes/Cefedem/css/fancymoves.css" media="screen" charset="utf-8" rel="stylesheet"  />
+	<link rel="stylesheet" href="wp-content/themes/Cefedem/coin-slider/coin-slider-styles.css" type="text/css" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/bootstrap/css/bootstrap-responsive.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('stylesheet_url'); ?>"  />
+
     <!--<link href="style.css" rel="stylesheet" type="text/css">-->
     <style>
       body {
@@ -36,13 +40,21 @@
     border: 5px solid white;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 	}
+	.leg {
+	position: absolute;
+	top: 180px;
+	visibility:hidden;
+}
     </style>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
-    <script src="wp-content/themes/Cefedem/js/jquery.js"></script> 
-    <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap.min.js"></script>
+    <script src="wp-content/themes/Cefedem/js/jquery.js"></script>
+    <script src="wp-content/themes/Cefedem/coin-slider/coin-slider.js"></script>
+    <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap.js"></script>
+	
+	
 
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
@@ -58,33 +70,32 @@
       <div class="container">
         <ul class="nav">
           <li> <a href="#">Accueil</a> </li>
-          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Formation initiale<b class="caret"></b> </a>
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Le centre<b class="caret"></b> </a>
           <ul class="dropdown-menu">
-            <li><a href="#">Contenu de la formation</a></li>
-            <li><a href="#">Condition d'accès</a></li>
-            <li><a href="#">Equipe pédagogique</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Pré-inscription en ligne</a></li>
+            <li><a href="#">La vie du centre</a></li>
+            <li><a href="#"><i class="icon-user"></i>L'équipe</a></li>
+            <li><a href="#">Nous trouver, nous contacter</a></li>
           </ul>
         </li>
-          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Formation travailleur <b class="caret"></b> </a>
+		<li> <a href="#">Formation diplomante</a> </li>
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Formation continue<b class="caret"></b> </a>
           <ul class="dropdown-menu">
-            <li><a href="#">Contenue de le formation</a></li>
-            <li><a href="#">Conditions d'accès</a></li>
-            <li><a href="#">Equipe pédagogique</a></li>
+            <li><a href="#">Catalogue des stages</a></li>
+            <li><a href="#">Journée rencontre-débat</a></li>
+            <li><a href="#">Formation sur site</a></li>
             <li class="divider"></li>
-            <li><a href="#">La VAE</a></li>
+            <li><a href="#"><i class="icon-list-alt"></i>Formulaire de demande d'inscription</a></li>
           </ul>
         </li>
-          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Formation professionnelle <b class="caret"></b> </a>
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Vie étudiante<b class="caret"></b> </a>
             <ul class="dropdown-menu">
-              <li><a href="#">Catalogue de stage</a></li>
-              <li><a href="#">Modalités d'inscirption</a></li>
-              <li><a href="#">Journées rencontre débat</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Demande d'information</a></li>
+              <li><a href="#">Aides aux étudiants</a></li>
+              <li><a href="#">Se loger à Lyon</a></li>
+              <li><a href="#">Se soigner</a></li>
+              <li><a href="#">Se déplacer</a></li>
             </ul>
           </li>
+		  <li> <a href="#">Espace réservé</a> </li> 
         </ul>
         <form class="navbar-search pull-right" action="">
           <input class="search-query" type="text" placeholder="Recherche">
@@ -100,7 +111,8 @@
             <div id="banner" role="banner" class="preContent">
               <div id="extraContainer4"></div>
               <div class="ss3">
-                <div class="pageHeader"></div>
+                <div class="pageHeader">
+				<img id="logo" src='wp-content/themes/Cefedem/image/logoneuf3.gif' width="200" /></div>
               </div><!--/ss3-->
               <div class="clear"></div>
               <section id="bannerContentBox">
@@ -113,113 +125,29 @@
         </div><!--/bannerOuter-->
       </div>
     </div>
-<div class="container"> <br/>
-  <div class="row">
-    <div class="span9">
-      <div id="myCarousel" class="carousel">
-        <div class="carousel-inner thumbnail">
-        <div class="item active"> <img alt="" src="wp-content/themes/Cefedem/image/312.JPG"/>
-          <div class="carousel-caption">
-            <p>Une présentation</p>
-          </div>
-        </div>
-        <div class="item"> <img alt="" src="wp-content/themes/Cefedem/image/bulletin13couv2.JPG"/>
-          <div class="carousel-caption">
-            <p>Un autre présentation</p>
-          </div>
-        </div>
-        <div class="item"> <img alt="" src="wp-content/themes/Cefedem/image/elm11.JPG"/>
-          <div class="carousel-caption">
-            <p>Et encore une autre !</p>
-         </div>
-          </div>
-        </div>
-        <a class="carousel-control left" data-slide="prev" href="#myCarousel">‹</a> <a class="carousel-control right" data-slide="next" href="#myCarousel">›</a> 
-		</div>
-    </div>
-    <div class="span3 btn-group">
-      <button id="pause" class="btn btn-warning pull-right" >Pause</button>
-      <button id="reprise" class="btn btn-info pull-right" >Reprise</button>
-    </div>
-  </div>
-  <span class="label label-info">Mode cycle</span> </div>
-   <div class="page-header">
-    <div class="row">
-      <div class="span12">
-        
-      </div>
-    </div>
-  <div class="row">
-    <div class="span12">...</div>
-  </div>
-
-  <div class="row">
-    <div class="span2">...</div>
-    <div class="span2">...</div>
-    <div class="span2">...</div>
-    <div class="span2">...</div>
-    <div class="span2">...</div>
-    <div class="span2">...</div>
-    <div class="span2">...</div>
-    <div class="span2">...</div>
-    <div class="span2">...</div>
-    <div class="span2">...</div>
-    <div class="span2">...</div>
-    <div class="span2">...</div>
-  </div>
-  <div class="row">
-    <div class="span4">
-    <h5>Voici les sous-espèces des tigres :</h5>
-<br/>
-<ul>
-   <li>Tigre de Sibérie</li>
-   <li>Tigre de Chine méridionale</li>
-</ul>
+<div class="span6">
+<div id='coin-slider'>
+    <a href="img01_url" target="_blank">
+	        <img src='wp-content/themes/Cefedem/image/imagecarouss1.JPG'/>
+	        <span>
+            Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum et Eusebium nec professionem nec dignitatem ostendens aliquotiens increpabat, qui sint hi magna quaerebatur industria, et nequid intepesceret, Epigonus e Lycia philosophus ducitur et Eusebius ab Emissa Pittacas cognomento.
+	        </span>
+	    </a>
+	<a href="img02_url" target="_blank">
+	    <img src='wp-content/themes/Cefedem/image/imagecarouss2.JPG'/>
+	     <span>
+         Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum et Eusebium nec professionem nec dignitatem ostendens aliquotiens increpabat, qui sint hi magna quaerebatur industria, et nequid intepesceret, Epigonus e Lycia philosophus ducitur et Eusebius ab Emissa Pittacas cognomento, concitatus orator.
+	 </a
+    <a href="img03_url" target="_blank">
+	        <img src='wp-content/themes/Cefedem/image/imagecarouss3.JPG'/>
+	        <span>
+            Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum et Eusebium nec professionem nec dignitatem ostendens aliquotiens increpabat, qui sint hi magna quaerebatur industria, et nequid intepesceret, Epigonus e Lycia philosophus ducitur et Eusebius ab Emissa Pittacas cognomento, concitatus orator.
+	        </span>
+	    </a>	
 </div>
-    <div class="span8">...</div>
-  </div>
-  <div class="row">
-    <div class="span9">
-    <table class="table table-bordered table-striped table-condensed">
-   <caption>
-      <h4>Les menaces pour les tigres</h4>
-   </caption>
-   <thead>
-      <tr>
-            <th>Lieu</th>
-            <th>Menace</th>
-      </tr>
-   </thead>
-   <tbody>
-          <tr>
-            <td>Grand Mekong</td>
-            <td>Demande croissante de certaines parties de l’animal pour la médecine chinoise traditionnelle 
-et fragmentation des habitats du fait du développement non durable d’infrastructures</td>
-          </tr>
-          <tr>
-            <td>Île de Sumatra</td>
-            <td>Production d’huile de palme et de pâtes à papiers</td>
-          </tr>
-          <tr>
-            <td>Indonésie et Malaisie</td>
-            <td>Pâte à papier, l’huile de palme et le caoutchouc</td>
-          </tr>
-          <tr>
-            <td>États-Unis</td>
-            <td>Les tigres captifs représentent un danger pour les tigres sauvages</td>
-          </tr>
-          <tr>
-            <td>Europe</td>
-            <td>Gros appétit pour l’huile de palme</td>
-          </tr>
-          <tr>
-            <td>Népal</td>
-            <td>Commerce illégal de produits dérivés de tigres</td>
-          </tr>
-    </tbody>
-</table></div>
-  </div>
 </div>
+	
+<div class="span6">
 <div id="content">
 	<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 	<div class="post" id="post-<?php the_ID(); ?>">
@@ -228,12 +156,7 @@ et fragmentation des habitats du fait du développement non durable d’infrastr
 	<?php the_content(); ?>
 	</div>
 	</div>
-	<p class="postmetadata">
-		<?php the_time('j F Y') ?> par <?php the_author() ?> | 
-		Cat&eacute;gorie: <?php the_category(', ') ?> | 
-		<?php comments_popup_link('Pas de commentaires', '1 Commentaire', '% Commentaires'); ?> 
-		<?php edit_post_link('Editer', ' &#124; ', ''); ?>
-	</p>
+	
 	<div class="comments-template">
 	<?php comments_template(); ?>
 	</div>
@@ -248,6 +171,35 @@ et fragmentation des habitats du fait du développement non durable d’infrastr
 
 	<?php endif; ?>
 </div> 
+</div>
+
+ <div class="page-header">
+    <div class="row">
+      <div class="span12">
+        
+      </div>
+    </div>
+
+  <div class="row" id="images" class="span12">
+    <div class="span3"><a href="#"><img alt="" width="200" height="150" src="wp-content/themes/Cefedem/image/intro-formation-continue.JPG"/></a>
+	<h5>Aides aux étudiants</h5></div>
+    <div class="span3"><a href="#"><img alt="" width="200" height="150" src="wp-content/themes/Cefedem/image/intro-formation-continue.JPG"/></a>
+	<h5>Catalogue des stages</h5>
+	</div>
+    <div class="span3"><a href="#"><img alt="" width="200" height="150" src="wp-content/themes/Cefedem/image/intro-formation-continue.JPG"/></a>
+	<h5>Plan de la formation</h5>
+	</div>
+    <div class="span3"><a href="#"><img alt="" width="200" height="150" src="wp-content/themes/Cefedem/image/intro-formation-continue.JPG"/></a>
+	<h5>Formulaire de demande d'inscription</h5></div>
+    <div class="span3"><a href="#"><img alt="" width="200" height="150" src="wp-content/themes/Cefedem/image/intro-formation-continue.JPG"/></a>
+	<h5>Nous trouver, nous contacter</h5></div>
+    <div class="span3"><a href="#"><img alt="" width="200" height="150" src="wp-content/themes/Cefedem/image/intro-formation-continue.JPG"/></a>
+	<h5>Espace Reservé</h5></div>
+  </div>
+
+ 
+</div>
+
 <div id="footer">
 	<p>
 	Copyright &#169; <?php print(date(Y)); ?> <?php bloginfo('name'); ?>
@@ -275,6 +227,7 @@ $(function (){
     });
 }); 
 </script>
+
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -290,6 +243,15 @@ $(function (){
     <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap-collapse.js"></script>
     <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap-carousel.js"></script>
     <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap-typeahead.js"></script>
-
+<script type="text/javascript">  
+$(document).ready(function () {  
+$('.dropdown-toggle').dropdown();  
+});  
+</script> 
+<script type="text/javascript">
+	    $(document).ready(function() {
+	        $('#coin-slider').coinslider( );
+	    });
+	</script>
   </body>
 </html>
