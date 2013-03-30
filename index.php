@@ -134,7 +134,8 @@
          </div>
           </div>
         </div>
-        <a class="carousel-control left" data-slide="prev" href="#myCarousel">‹</a> <a class="carousel-control right" data-slide="next" href="#myCarousel">›</a> </div>
+        <a class="carousel-control left" data-slide="prev" href="#myCarousel">‹</a> <a class="carousel-control right" data-slide="next" href="#myCarousel">›</a> 
+		</div>
     </div>
     <div class="span3 btn-group">
       <button id="pause" class="btn btn-warning pull-right" >Pause</button>
