@@ -125,8 +125,9 @@
         </div><!--/bannerOuter-->
       </div>
     </div>
+<div class="caroussel">
 <div class="span6">
-<div id='coin-slider'>
+<div id='coin-slider' >
     <a href="img01_url" target="_blank">
 	        <img src='wp-content/themes/Cefedem/image/imagecarouss1.JPG'/>
 	        <span>
@@ -144,6 +145,7 @@
             Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum et Eusebium nec professionem nec dignitatem ostendens aliquotiens increpabat, qui sint hi magna quaerebatur industria, et nequid intepesceret, Epigonus e Lycia philosophus ducitur et Eusebius ab Emissa Pittacas cognomento, concitatus orator.
 	        </span>
 	    </a>	
+</div>
 </div>
 </div>
 	
