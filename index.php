@@ -1,20 +1,6 @@
-<?php
-/**
-* The main template file.
-*
-* This is the most generic template file in a WordPress theme
-* and one of the two required files for a theme (the other being style.css).
-* It is used to display a page when nothing more specific matches a query.
-* E.g., it puts together the home page when no home.php file exists.
-* Learn more: http://codex.wordpress.org/Template_Hierarchy 
-* 
-* @package WordPress
-* @subpackage learningTheme*/
-?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html >
   <head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta charset="utf-8">
     <title>Cefedem</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,14 +9,12 @@
 
     <!-- Le styles -->
 	
-	<link type="text/css" href="wp-content/themes/Cefedem/css/fancymoves.css" media="screen" charset="utf-8" rel="stylesheet"  />
-	<link rel="stylesheet" href="wp-content/themes/Cefedem/coin-slider/coin-slider-styles.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>" />
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/bootstrap/css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/bootstrap/css/bootstrap-responsive.css"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('stylesheet_url'); ?>"  />
+	<link rel="stylesheet" href="wp-content/themes/Cefedem/coin-slider/coin-slider-styles.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="style.css">
+    <link rel="stylesheet" type="text/css" media="all" href="wp-content/themes/Cefedem/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="wp-content/themes/Cefedem/bootstrap/css/bootstrap-responsive.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('stylesheet_url'); ?>">
 
-    <!--<link href="style.css" rel="stylesheet" type="text/css">-->
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -54,9 +38,7 @@
     <script src="wp-content/themes/Cefedem/coin-slider/coin-slider.js"></script>
     <script src="wp-content/themes/Cefedem/bootstrap/js/bootstrap.js"></script>
 	
-	
 
-    <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
@@ -77,7 +59,7 @@
             <li><a href="#">Nous trouver, nous contacter</a></li>
           </ul>
         </li>
-		<li> <a href="#">Formation diplomante</a> </li>
+		<li> <a href="#">Formation diplômante</a> </li>
           <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Formation continue<b class="caret"></b> </a>
           <ul class="dropdown-menu">
             <li><a href="#">Catalogue des stages</a></li>
@@ -97,7 +79,7 @@
           </li>
 		  <li> <a href="#">Espace réservé</a> </li> 
         </ul>
-        <form class="navbar-search pull-right" action="">
+        <form class="navbar-search pull-right" >
           <input class="search-query" type="text" placeholder="Recherche">
         </form>
       </div>
@@ -112,7 +94,7 @@
               <div id="extraContainer4"></div>
               <div class="ss3">
                 <div class="pageHeader">
-				<img id="logo" src='wp-content/themes/Cefedem/image/logoneuf3.gif' width="200" /></div>
+				<img id="logo" src='wp-content/themes/Cefedem/image/logoneuf3.gif' width="200" alt=""></div>
               </div><!--/ss3-->
               <div class="clear"></div>
               <section id="bannerContentBox">
@@ -129,18 +111,19 @@
 <div class="span6">
 <div id='coin-slider' >
     <a href="img01_url" target="_blank">
-	        <img src='wp-content/themes/Cefedem/image/imagecarouss1.JPG'/>
+	        <img src='wp-content/themes/Cefedem/image/imagecarouss1.JPG' alt="">
 	        <span>
             Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum et Eusebium nec professionem nec dignitatem ostendens aliquotiens increpabat, qui sint hi magna quaerebatur industria, et nequid intepesceret, Epigonus e Lycia philosophus ducitur et Eusebius ab Emissa Pittacas cognomento.
 	        </span>
 	    </a>
 	<a href="img02_url" target="_blank">
-	    <img src='wp-content/themes/Cefedem/image/imagecarouss2.JPG'/>
+	    <img src='wp-content/themes/Cefedem/image/imagecarouss2.JPG' alt="">
 	     <span>
          Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum et Eusebium nec professionem nec dignitatem ostendens aliquotiens increpabat, qui sint hi magna quaerebatur industria, et nequid intepesceret, Epigonus e Lycia philosophus ducitur et Eusebius ab Emissa Pittacas cognomento, concitatus orator.
-	 </a
+		</span>
+	 </a>
     <a href="img03_url" target="_blank">
-	        <img src='wp-content/themes/Cefedem/image/imagecarouss3.JPG'/>
+	        <img src='wp-content/themes/Cefedem/image/imagecarouss3.JPG' alt="">
 	        <span>
             Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum et Eusebium nec professionem nec dignitatem ostendens aliquotiens increpabat, qui sint hi magna quaerebatur industria, et nequid intepesceret, Epigonus e Lycia philosophus ducitur et Eusebius ab Emissa Pittacas cognomento, concitatus orator.
 	        </span>
@@ -158,63 +141,67 @@
 	<?php the_content(); ?>
 	</div>
 	</div>
-	
-	<div class="comments-template">
-	<?php comments_template(); ?>
-	</div>
 	<?php endwhile; ?>
-	<div class="navigation">
-	<?php posts_nav_link(' - ','page suivante','page pr&eacute;c&eacute;dente'); ?>
-	</div>
 	<?php else : ?>
 	<h2>Oooopppsss...</h2>
 	<p>Désolé, mais vous cherchez quelque chose qui ne se trouve pas ici .</p>
 	<?php include (TEMPLATEPATH . "/searchform.php"); ?>
-
 	<?php endif; ?>
 </div> 
 </div>
 
  <div class="page-header">
     <div class="row">
-      <div class="span12">
-        
-      </div>
     </div>
-
-  <div class="row" id="images" class="span12">
+  <div class="row" id="images" >
     <div class="span3"><a href="#"><img alt="" width="200" height="150" src="wp-content/themes/Cefedem/image/intro-formation-continue.JPG"/></a>
-	<h5>Aides aux étudiants</h5></div>
+	<h5>Formation diplômante</h5></div>
     <div class="span3"><a href="#"><img alt="" width="200" height="150" src="wp-content/themes/Cefedem/image/intro-formation-continue.JPG"/></a>
 	<h5>Catalogue des stages</h5>
 	</div>
     <div class="span3"><a href="#"><img alt="" width="200" height="150" src="wp-content/themes/Cefedem/image/intro-formation-continue.JPG"/></a>
-	<h5>Plan de la formation</h5>
+	<h5>Vie étudiante</h5>
 	</div>
     <div class="span3"><a href="#"><img alt="" width="200" height="150" src="wp-content/themes/Cefedem/image/intro-formation-continue.JPG"/></a>
-	<h5>Formulaire de demande d'inscription</h5></div>
+	<h5>Conditions d'accès</h5></div>
+    <div class="span3"><a href="#"><img alt="" width="200" height="150" src="wp-content/themes/Cefedem/image/intro-formation-continue.JPG"/></a>
+	<h5>La vie du centre</h5></div>
     <div class="span3"><a href="#"><img alt="" width="200" height="150" src="wp-content/themes/Cefedem/image/intro-formation-continue.JPG"/></a>
 	<h5>Nous trouver, nous contacter</h5></div>
-    <div class="span3"><a href="#"><img alt="" width="200" height="150" src="wp-content/themes/Cefedem/image/intro-formation-continue.JPG"/></a>
-	<h5>Espace Reservé</h5></div>
   </div>
-
- 
 </div>
 
 <div id="footer">
 	<p>
 	Copyright &#169; <?php print(date(Y)); ?> <?php bloginfo('name'); ?>
 	<br />
-	Blog propulsé par <a href="http://wordpress.org/">WordPress</a> et con&ccedil;u par <a href="http://www.fran6art.com">Fran6art</a>
+	Blog propulsé par <a href="http://wordpress.org/">WordPress</a>
 	<br />
-	<a href="feed:<?php bloginfo('rss2_url'); ?>">Articles (RSS)</a> et <a href="feed:<?php bloginfo('comments_rss2_url'); ?>">Commentaires (RSS)</a>.
 	<?php echo get_num_queries(); ?> requêtes. <?php timer_stop(1); ?> secondes.
 	</p>
+<div>
+<div class="span3">
+
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="CSS Valide !" />
+   </a>
 </div>
-
+<div class="span3">
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="CSS Valide !" />
+</a>
+</div>
+<div class="span3">
+<img src="wp-content/themes/Cefedem/image/w3cvalidhtml5.jpg" 
+alt ="HTML Valide !"/>
+</div>
+</div>
+</div>
 <script>
-
 $(function (){
     $('.carousel').carousel({
     interval: 5000 
